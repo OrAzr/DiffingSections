@@ -27,6 +27,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //  my goal is to compare oldItems and new items as follows:
+        /*  while doing so, the compiler will complain, so for this demo im comparing only the top section
+ 
+         let oldItems = [topSection!, bottomSection!]
+         self.generateData() // this code generate new data
+         let newItems = [topSection!, bottomSection!]
+         
+         self.table.animateRowAndSectionChanges(oldData: oldItems, newData: newItems, rowDeletionAnimation: .right, rowInsertionAnimation: .left )
+         
+         */
+        
         let oldItems = [topSection!]
         self.generateData()
         let newItems = [topSection!]
